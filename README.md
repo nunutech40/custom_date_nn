@@ -8,7 +8,11 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  custom_date_nn: ^0.0.1
+  ...
+  custom_date_nn:
+    git:
+      url: https://github.com/nunutech40/custom_date_nn.git
+      ref: main
 ```
 
 ## Then install packages from the command line:
