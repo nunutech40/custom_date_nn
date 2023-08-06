@@ -1,0 +1,20 @@
+name: custom_date_nn
+description: On of inside of utlis to custom date, with default return format or custom format..
+version: 0.0.1
+homepage: https://github.com/nunutech40
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
