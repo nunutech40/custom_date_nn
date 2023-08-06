@@ -1,39 +1,43 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# custom_date_nn
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+A custom date formatter utility for Dart and Flutter.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Installation
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Add this to your package's `pubspec.yaml` file:
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  custom_date_nn: ^0.0.1
 ```
 
-## Additional information
+## Then install packages from the command line:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```
+$ flutter pub get
+```
+
+# Usage
+### Import the package:
+```
+import 'package:custom_date_nn/custom_date_nn.dart';
+```
+
+## Use it in your Dart code:
+
+```
+void main() {
+  var formattedDate = CustomDateFormatNN.convertToDateFormat("2023-08-01 14:20:30");
+  print(formattedDate);  // Expected output: "01-August-2023"
+}
+```
+
+## You can also specify a custom format:
+
+```
+var formattedDate = CustomDateFormatNN.convertToDateFormat(
+  "2023-08-01 14:20:30",
+  format: "dd/MM/yyyy"
+);
+print(formattedDate);  // Expected output: "01/08/2023"
+```
